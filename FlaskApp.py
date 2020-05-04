@@ -18,4 +18,4 @@ def base(): return render_template('base.html')
 def hello_sean(): return ("Hello, Sean!")
 
 if __name__ == "__main__":
-    app.run(host='localhost',port=5000)
+    app.run(debug=True)
