@@ -1,1 +1,1 @@
-web: python FlaskApp.py
+web: index.html
