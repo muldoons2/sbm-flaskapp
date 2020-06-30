@@ -18,13 +18,13 @@ app = Flask(__name__)
 ############################################################
     
 @app.route("/")
-def home(): return render_template('home.html')
+def home(): return render_template('home2.html')
 
 @app.route("/index")
-def index(): return render_template('templates/index.html')
+def index(): return render_template('index2.html')
 
 @app.route("/base")
-def base(): return render_template('templates/base.html')
+def base(): return render_template('base2.html')
 
 @app.route("/hello_sean")
 def hello_sean(): return ("Hello, Sean!")
