@@ -2,7 +2,6 @@ import os
 import requests
 from flask import Flask, render_template, url_for
 from datetime import datetime
-from serpapi.google_search_results import GoogleSearchResults
 app = Flask(__name__)
 
 # def ye_says():
