@@ -6,18 +6,15 @@
 	<meta name="viewport" width="device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-
-	{% block head %}
-	<h2>This text is between "block head" and "endblock" in Base file</h2>
-	{% endblock %}
 </head>
+	
+<h2>This is static text from the Base file #1, Dynamic Block Head is below:</h2>
+{% block head %}
+{% endblock %}
 
-<body align="center" width="720px" border-width="2px" border-color="black">
-	<h2>This text is below "body block" and above "body block" in Base file</h2>
+<h2>This is static text from the Base file #2, Dynamic Body Block is below:</h2>
+{% block body %}
+{% endblock %}
 	
-	
-	{% block body %}
-	<h2>This text is between "body block" and "endblock" in Base file</h2>
-	{% endblock %}
 </body>
 </html>
