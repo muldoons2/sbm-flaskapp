@@ -26,7 +26,7 @@ def base(): return render_template('base.html')
 
 @app.route("/kanye2")
 def kanye2():
-    return render_template('kanye2.html')
+    return render_template('kanye.html')
 
 @app.route("/kanye")
 def kanye(): return """<!DOCTYPE html>
