@@ -26,9 +26,6 @@ def index(): return render_template('index.html')
 @app.route("/base")
 def base(): return render_template('base.html')
 
-@app.route("/hello_sean")
-def hello_sean(): return ("Hello, Sean!")
-
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
