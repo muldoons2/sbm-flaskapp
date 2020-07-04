@@ -60,7 +60,7 @@ def kanye(): return """<!DOCTYPE html>
 			<section id="main">
 				<div class="inner">
 				
-					<div class="12u$"><span class="image fit"><img src="images/pic11.jpg" alt="" /></span></div>
+					
 					<h1>Kanye Says:</h1>
     
 					<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
