@@ -6,21 +6,10 @@
 
 
 {% block body %}
-	<h3>This is dynamic text from the Kanye File Body Block</h3>
 	<section id="main">
-	<div class="inner">
-
-	<h2>Kanye Says:</h2>
-
-	<h3>{{ value }}</h3>
-	</div>
-
-	<br>
-
-	<div class="inner">
-	<button onClick="window.location.reload();">More Kanye Wisdom</button></div>
+		<div class="inner">
+		<p>{{ value }}</p>
+		<br>
+		<button onClick="window.location.reload();">More Kanye Wisdom</button></div>
 	</section>
-
-	<h3>{{ value }}</h3>
-
 {% endblock %}
