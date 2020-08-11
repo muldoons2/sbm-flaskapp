@@ -59,11 +59,14 @@ def kanye(): return """<!DOCTYPE html>
 <!-- Main -->
 			<section id="main">
 				<div class="inner">
-				
-					
-					<h1>Kanye Says:</h1>
+			
+				<h1>Kanye Says:</h1>
     
-					<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
+				<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
+			</section>
+			
+			<section>
+				<button onClick="window.location.reload();">More Kanye Wisdom</button>
 			</section>
 
 <!-- Footer -->
