@@ -5,10 +5,17 @@
 <h3>This is dynamic text from the Kanye File Block Head</h3>
 {% endblock %}
 
+<div class="inner">
+			
+  <h1>Kanye Says:</h1>
 
-<!-- {{ ye_quote }} -->
-
-{% ye_quote %}
+  {% if ye_quote %}
+    <p>{{ye_quote }}</p>
+  {% else %}
+    <p>Welcome to Microblog!</p>
+  {% endif %}
+  
+</div>
 
 
 {% block body %}
