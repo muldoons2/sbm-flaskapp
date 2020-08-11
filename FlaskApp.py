@@ -63,9 +63,8 @@ def kanye(): return """<!DOCTYPE html>
 				<h1>Kanye Says:</h1>
     
 				<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
-			</section>
-			
-			<section>
+				
+				<br>
 				<button onClick="window.location.reload();">More Kanye Wisdom</button>
 			</section>
 
