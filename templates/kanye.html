@@ -5,21 +5,23 @@
 <h3>This is dynamic text from the Kanye File Block Head</h3>
 {% endblock %}
 
+one
+
+{{ye_quote}}
+
+<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
+
+two
+
+{% ye_quote %}
+
+three
+
+ye_quote
+
 {% block body %}
 <h3>This is dynamic text from the Kanye File Body Block</h3>
 
-
-
-		<section id="main">
-				<div class="inner">
-			
-				<h1>Kanye Says:</h1>
-    
-				<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
-				
-				<br>
-				<div class="inner">
-				<button onClick="window.location.reload();">More Kanye Wisdom</button></div>
-			</section>
+{{ye_quote}}
       
 {% endblock %}
