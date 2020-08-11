@@ -15,10 +15,6 @@ app = Flask(__name__)
 #     f = open('templates/kanye2.html', 'w+')
 #     f.write(c)
 
-
-ye_quote= = requests.get("https://api.kanye.rest").json()['quote']
-
-
 @app.route("/")
 def home(): return render_template('home.html')
 
@@ -30,7 +26,8 @@ def base(): return render_template('base.html')
 
 @app.route("/kanye2")
 def kanye2():
-    return render_template('kanye.html')
+    ye_quote= requests.get("https://api.kanye.rest").json()['quote']
+    return render_template('kanye.html',ye_quote)
 
 @app.route("/kanye")
 def kanye(): return """<!DOCTYPE html>
