@@ -54,7 +54,7 @@ def kanye(): return """<!DOCTYPE html>
 					<li><a href="generic.html">Generic</a></li>
 					<li><a href="elements.html">Elements</a></li>
 				</ul>
-			</nav
+			</nav>
 
 
 <!-- Main -->
@@ -63,7 +63,7 @@ def kanye(): return """<!DOCTYPE html>
 			
 				<h1>Kanye Says:</h1>
     
-				<header>""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
+				""" + requests.get("https://api.kanye.rest").json()['quote'] + """</div>
 				
 				<br>
 				<div class="inner">
