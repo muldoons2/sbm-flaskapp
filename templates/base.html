@@ -28,21 +28,12 @@
 
 <!-- Main -->
 			<section id="main">
-				<div class="inner">
+					{% block head %}
+					{% endblock %}
 				
-					<header>
-							{% block head %}
-							{% endblock %}
-					
-					</header>		
-				</div>
-		
-				<div class="inner">
-
-							{% block body %}
-							{% endblock %}
-
-					</div>
+					{% block body %}
+					{% endblock %}
+				
 			</section>
 
 <!-- Footer -->
