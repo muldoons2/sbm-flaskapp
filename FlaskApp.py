@@ -25,7 +25,7 @@ def index(): return render_template('index.html')
 def base(): return render_template('base.html')
 
 @app.route("/carousel")
-def base(): return render_template('carousel.html')
+def carousel(): return render_template('carousel.html')
 
 @app.route("/kanye2")
 def kanye2():
